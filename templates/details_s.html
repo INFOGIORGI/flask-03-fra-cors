@@ -1,0 +1,18 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<table>
+    <tr>
+        <td>NomeProd</td>
+        <td>Prezzo</td>
+    </tr>
+    {%for i in lista%}
+    <tr>
+        <td>{{i[0]}}</td>
+        <td>{{i[2]}}</td>
+    </tr>
+    {%endfor%}
+</table>
+
+
+{%endblock%}

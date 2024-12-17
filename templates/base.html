@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fff</title>
+    <title>{{titolo}}</title>
 </head>
 <body>
     <h1> SITO DB</h1>
 
     <nav>
-        <a href="{{url_for(home)}}"> Home </a>
-        <a href="{{url_for(details)}}"> Details </a>
-        {{%block wikipedia%}}{{%endblock%}}
+        <a href="{{url_for('home')}}"> Home </a>
+        <a href="{{url_for('details')}}"> Details </a>
+        {%block wikipedia%}{%endblock%}
     </nav>
 
-    {{%block content%}}{{%endblock%}}
+    {%block content%}{%endblock%}
 </body>
 </html>
